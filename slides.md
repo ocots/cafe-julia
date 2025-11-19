@@ -275,7 +275,7 @@ style: |
 
 # L’écosystème Julia *control-toolbox* pour le contrôle optimal
 
-*Olivier Cots – CNRS, Toulouse INP, IRIT*
+*Olivier Cots – Toulouse INP, IRIT*
 
 *Jean-Baptiste Caillau • Joseph Gergaud • Pierre Martinon • Sophia Sed*
 
@@ -285,15 +285,14 @@ Café Julia, 20 novembre 2025 (<https://github.com/ocots/cafe-julia>)
 
 ## Contexte
 
-Le projet **control-toolbox** rassemble plusieurs packages Julia pour modéliser et résoudre des problèmes de contrôle optimal. Son package principal est **OptimalControl.jl**, dont la première version a été publiée le 4 février 2023.
+Le projet **control-toolbox** est une organisation GitHub qui rassemble plusieurs packages Julia pour modéliser, résoudre et analyser des problèmes de contrôle optimal dans les équations différentielles ordinaires déterministes. Son package principal est **OptimalControl.jl**, dont la première version a été publiée le 4 février 2023.
 
 Dans cette présentation, nous verrons :
 
 - Une introduction au contrôle optimal ;
 - Un panorama de l'écosystème Julia pour le contrôle optimal ;
 - Une présentation de l'architecture du projet ;
-- Une démonstration pratique sur un exemple simple ;
-- Une démonstration pratique sur une application complexe ;
+- Une démonstration pratique sur un exemple simple et une sur une application plus complexe ;
 - Une étude comparative de performances sur CPU et GPU ;
 - Une présentation des principaux choix de conception logicielle.
 
