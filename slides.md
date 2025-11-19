@@ -315,10 +315,10 @@ Dans cette présentation, nous verrons :
 
 ## 2. Pourquoi Julia ?
 
-Julia est un langage de haut niveau, rapide et dynamique, idéal pour le calcul scientifique et le contrôle optimal.
+Julia est un langage de haut niveau, rapide et dynamique, particulièrement adapté au calcul scientifique et au contrôle optimal.
 
-- **Performances** : compilation JIT et fonctions stables en type → code machine optimisé  
-- **Syntaxe expressive** : proche des notations mathématiques, support Unicode  
+- **Performances** : compilation JIT et fonctions *type stable* → code machine optimisé  
+- **Syntaxe expressive** : proche des notations mathématiques, avec prise en charge d’Unicode  
 
 <div class="custom-columns">
 <div class="column">
@@ -368,7 +368,7 @@ julia> ∇f(1.0, 2.0)
 ### Packages principaux
 
 - **OptimalControl.jl** : DSL pour modéliser et résoudre des OCPs (directes/indirectes, CPU/GPU)  
-- **OptimalControlProblems.jl** : bibliothèque de problèmes de référence, prête pour benchmarking et comparaisons : [CTBenchmaks.jl](https://github.com/control-toolbox/CTBenchmarks.jl)
+- **OptimalControlProblems.jl** : bibliothèque de problèmes (modélisations JuMP, ADNLPModel, ExaModel), prête pour le benchmarking
 
 <div class="columns">
 <div class="column">
@@ -378,8 +378,8 @@ julia> ∇f(1.0, 2.0)
 - **CTBase.jl** : exceptions, fonctions utilitaires
 - **CTModels.jl** : types des modèles, solutions, setters, getters et visualisation  
 - **CTDirect.jl** : discrétisation et résolution  
-- **CTFlows.jl** : systèmes hamiltoniens et flots
-- **CTParser.jl** : définition abstraite et parser
+- **CTFlows.jl** : flots de systèmes dynamiques
+- **CTParser.jl** : définition abstraite et parsing
 
 </div>
 
@@ -398,7 +398,7 @@ julia> ∇f(1.0, 2.0)
 
 ## 4. Exemple minimaliste : double intégrateur
 
-**Problème** : Trouver le contrôle optimal pour amener un système de la position $(-1, 0)$ à $(0, 0)$ en minimisant l'énergie du contrôle.
+**Problème** : Trouver la paire trajectoire-commande optimale pour amener le système du double intégrateur ($\ddot{x} = u$) depuis la position $(-1, 0)$ jusqu'à la position $(0, 0)$ en minimisant l'énergie de la commande.
 
 <div class="columns">
 <div class="column">
