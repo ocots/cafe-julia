@@ -326,7 +326,7 @@ Dans cette présentation, nous verrons :
 
 - **CTBase.jl** : exceptions, fonctions utilitaires
 - **CTModels.jl** : types des modèles, solutions, setters, getters et visualisation  
-- **CTDirect.jl** : discrétisation et résolution  
+- **CTDirect.jl** : discrétisation (OCP → NLP) et résolution  
 - **CTFlows.jl** : flots de systèmes dynamiques
 - **CTParser.jl** : définition abstraite (Domain-Specific-Language) et parsing
 
