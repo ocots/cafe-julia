@@ -279,7 +279,7 @@ style: |
 
 *Jean-Baptiste Caillau • Joseph Gergaud • Pierre Martinon • Sophia Sed*
 
-Café Julia, 20 novembre 2025
+Café Julia, 20 novembre 2025 (<https://github.com/ocots/cafe-julia>)
 
 ---
 
@@ -515,7 +515,7 @@ plot(sol)
 
 - **Intégration continue** : tests, couverture, documentation  
 - **Tests unitaires** : modèles, solveurs, API  
-- **Benchmarks** : suivi des performances (à améliorer → [Guix](https://guix.gnu.org/fr/about)) 
+- **Benchmarks** : suivi des performances (à améliorer → [Guix](https://guix.gnu.org/fr/about))
 - **Détection d'incompatibilités** en amont
 - **Workflows GitHub** centralisés : [CTActions](https://github.com/control-toolbox/CTActions)
 
@@ -527,7 +527,7 @@ plot(sol)
 <img src="figs/actions.png" alt="CTActions workflows" style="max-width: 100%;"/>
 
 </div>
-<div class="column">    
+<div class="column">
 
 **Détection d'incompatibilités**
 
