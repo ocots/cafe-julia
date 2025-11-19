@@ -477,18 +477,19 @@ plot(sol)
 <br>
 <br>
 <br>
+
+### Architecture SIMD (Single Instruction on Multiple Data) et Performance
+
+- [Discrétisation du problème de contrôle optimal](https://control-toolbox.org/OptimalControlProblems.jl/stable/problems-introduction.html)
+- [Profile de perfomance sur CPU](https://control-toolbox.org/CTBenchmarks.jl/previews/PR97/core/cpu.html#Performance-Profile-CPU-Time)
+- Problème de Goddard : [Temps de résolution CPU](https://control-toolbox.org/CTBenchmarks.jl/previews/PR97/core/problems/rocket.html#Time-vs-Grid-Size-(Ubuntu-Latest-CPU)) et [Temps de résolution GPU](https://control-toolbox.org/CTBenchmarks.jl/previews/PR97/core/problems/rocket.html#Time-vs-Grid-Size-(Moonshot-GPU))
+
 <br>
 
-### Architecture SIMD
+### Autres exemples d'applications
 
-[Discrétisation du problème de contrôle optimal](https://control-toolbox.org/OptimalControlProblems.jl/stable/problems-introduction.html)
-
-<br>
-<br>
-
-### Autre exemple
-
-[Minimum time orbit transfer](https://control-toolbox.org/Kepler.jl/stable/#orbit)
+- [Double intégrateur à temps min](https://control-toolbox.org/OptimalControl.jl/stable/example-double-integrator-time.html) : direct et indirect
+- [Magnetic Resonance Imaging](https://control-toolbox.org/MagneticResonanceImaging.jl/stable/bloch-equation.html) : direct, indirect et crochets de Poisson pour le calcul du contrôle singulier
 
 ---
 
