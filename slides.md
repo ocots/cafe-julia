@@ -290,9 +290,9 @@ Le projet **control-toolbox** est une organisation GitHub qui rassemble plusieur
 Dans cette présentation, nous verrons :
 
 - Une introduction au contrôle optimal ;
-- Un panorama de l'écosystème Julia pour le contrôle optimal ;
 - Une présentation de l'architecture du projet ;
-- Une démonstration pratique sur un exemple simple et une sur une application plus complexe ;
+- Un panorama de l'écosystème Julia pour le contrôle optimal ;
+- Une démonstration pratique sur un exemple simple et une application plus complexe ;
 - Une étude comparative de performances sur CPU et GPU ;
 - Une présentation des principaux choix de conception logicielle.
 
@@ -312,7 +312,40 @@ Dans cette présentation, nous verrons :
 
 ---
 
-## 2. Pourquoi Julia ?
+## 2. Panorama de *control-toolbox*
+
+### Packages principaux
+
+- **OptimalControl.jl** : DSL pour modéliser et résoudre des OCPs (directes/indirectes, CPU/GPU)  
+- **OptimalControlProblems.jl** : bibliothèque de problèmes (modélisations JuMP, ADNLPModel, ExaModel), prête pour le benchmarking
+
+<div class="columns">
+<div class="column">
+
+### Briques internes clés et architecture
+
+- **CTBase.jl** : exceptions, fonctions utilitaires
+- **CTModels.jl** : types des modèles, solutions, setters, getters et visualisation  
+- **CTDirect.jl** : discrétisation et résolution  
+- **CTFlows.jl** : flots de systèmes dynamiques
+- **CTParser.jl** : définition abstraite et parsing
+
+</div>
+
+<style>
+.column .diagramme {
+    margin-top: -1.5em;
+}
+</style>
+<div class="column">
+<img src="figs/diagramme.png" class="centered-image diagramme" alt="Architecture modulaire et cohérente" width="450px">
+<p class="caption">💡 Architecture modulaire</p>
+</div>
+</div>
+
+---
+
+## 3. Pourquoi Julia ?
 
 Julia est un langage de haut niveau, rapide et dynamique, particulièrement adapté au calcul scientifique et au contrôle optimal.
 
@@ -357,39 +390,6 @@ julia> ∇f(1.0, 2.0)
 
 **Avantages clés** : modélisation intuitive, parallélisme SIMD/GPU, extensibilité, différentiation automatique...
 
-</div>
-</div>
-
----
-
-## 3. Panorama de *control-toolbox*
-
-### Packages principaux
-
-- **OptimalControl.jl** : DSL pour modéliser et résoudre des OCPs (directes/indirectes, CPU/GPU)  
-- **OptimalControlProblems.jl** : bibliothèque de problèmes (modélisations JuMP, ADNLPModel, ExaModel), prête pour le benchmarking
-
-<div class="columns">
-<div class="column">
-
-### Briques internes clés et architecture
-
-- **CTBase.jl** : exceptions, fonctions utilitaires
-- **CTModels.jl** : types des modèles, solutions, setters, getters et visualisation  
-- **CTDirect.jl** : discrétisation et résolution  
-- **CTFlows.jl** : flots de systèmes dynamiques
-- **CTParser.jl** : définition abstraite et parsing
-
-</div>
-
-<style>
-.column .diagramme {
-    margin-top: -1.5em;
-}
-</style>
-<div class="column">
-<img src="figs/diagramme.png" class="centered-image diagramme" alt="Architecture modulaire et cohérente" width="450px">
-<p class="caption">💡 Architecture modulaire</p>
 </div>
 </div>
 
