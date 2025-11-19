@@ -308,7 +308,7 @@ Dans cette présentation, nous verrons :
 <p class="caption">Transfert Terre–Lune – Mission Apollo XI</p>
 </div>
 
-- **Domaine** : optimisation dans les équations différentielles ordinaires.
+- **Domaine** : optimisation dans les équations différentielles ordinaires déterministes.
 - **Applications** : aéronautique, aérospatial, biologie, énergie, finance, robotique, santé...
 
 ---
@@ -324,11 +324,11 @@ Julia est un langage de haut niveau, rapide et dynamique, particulièrement adap
 <div class="column">
 
 ```julia
-julia> f(x₁, x₂) = x₁^2 + 3x₂^2
+julia> f(α, β) = α^2 + 3β^2
 
-julia> ∇f(x₁, x₂) = [
-  2x₁, 
-  6x₂
+julia> ∇f(α, β) = [
+  2α, 
+  6β
 ]
 
 julia> ∇f(1.0, 2.0)
@@ -431,7 +431,7 @@ ocp = @def begin
     x(0) == [-1, 0]
     x(1) == [0, 0]
 
-    ẋ(t) == [x₂(t), u(t)]
+    ∂(x)(t) == [x₂(t), u(t)]
 
     0.5∫(u(t)^2) → min
 end

@@ -834,7 +834,7 @@ img[alt~=&quot;center&quot;] { display: block; margin: 0 auto; }
 <p class="caption">Transfert Terre–Lune – Mission Apollo XI</p>
 </div>
 <ul>
-<li><strong>Domaine</strong> : optimisation dans les équations différentielles ordinaires.</li>
+<li><strong>Domaine</strong> : optimisation dans les équations différentielles ordinaires déterministes.</li>
 <li><strong>Applications</strong> : aéronautique, aérospatial, biologie, énergie, finance, robotique, santé...</li>
 </ul>
 </section>
@@ -1112,11 +1112,11 @@ img[alt~=&quot;center&quot;] { display: block; margin: 0 auto; }
 </ul>
 <div class="custom-columns">
 <div class="column">
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-julia">julia&gt; f(x₁, x₂) = x₁^<span class="hljs-number">2</span> + <span class="hljs-number">3</span>x₂^<span class="hljs-number">2</span>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-julia">julia&gt; f(α, β) = α^<span class="hljs-number">2</span> + <span class="hljs-number">3</span>β^<span class="hljs-number">2</span>
 
-julia&gt; ∇f(x₁, x₂) = [
-  <span class="hljs-number">2</span>x₁, 
-  <span class="hljs-number">6</span>x₂
+julia&gt; ∇f(α, β) = [
+  <span class="hljs-number">2</span>α, 
+  <span class="hljs-number">6</span>β
 ]
 
 julia&gt; ∇f(<span class="hljs-number">1.0</span>, <span class="hljs-number">2.0</span>)
@@ -1711,7 +1711,7 @@ ocp = <span class="hljs-meta">@def</span> <span class="hljs-keyword">begin</span
     x(<span class="hljs-number">0</span>) == [-<span class="hljs-number">1</span>, <span class="hljs-number">0</span>]
     x(<span class="hljs-number">1</span>) == [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>]
 
-    ẋ(t) == [x₂(t), u(t)]
+    ∂(x)(t) == [x₂(t), u(t)]
 
     <span class="hljs-number">0.5</span>∫(u(t)^<span class="hljs-number">2</span>) → min
 <span class="hljs-keyword">end</span>
