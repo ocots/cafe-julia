@@ -277,7 +277,7 @@ style: |
 
 *Olivier Cots – Toulouse INP, IRIT*
 
-*Jean-Baptiste Caillau • Joseph Gergaud • Pierre Martinon • Sophia Sed*
+*Jean-Baptiste Caillau • Joseph Gergaud • Pierre Martinon*
 
 Café Julia, 20 novembre 2025 (<https://github.com/ocots/cafe-julia>)
 
