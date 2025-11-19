@@ -347,7 +347,7 @@ Dans cette présentation, nous verrons :
 
 ## 3. Pourquoi Julia ?
 
-Julia est un langage de haut niveau et performant.
+Julia est un langage performant, de haut niveau.
 
 - **Performances** : compilation JIT et fonctions *type stable* → code machine optimisé  
 - **Syntaxe expressive** : proche des notations mathématiques, avec prise en charge d’Unicode  
