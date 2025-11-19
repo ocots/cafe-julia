@@ -316,7 +316,7 @@ Dans cette présentation, nous verrons :
 
 ### Packages principaux
 
-- **OptimalControl.jl** : DSL pour modéliser et résoudre des OCPs (directes/indirectes, CPU/GPU)  
+- **OptimalControl.jl** : permet de modéliser, résoudre et analyser des OCPs (directes/indirectes, CPU/GPU)  
 - **OptimalControlProblems.jl** : bibliothèque de problèmes (modélisations JuMP, ADNLPModel, ExaModel), prête pour le benchmarking
 
 <div class="columns">
@@ -328,7 +328,7 @@ Dans cette présentation, nous verrons :
 - **CTModels.jl** : types des modèles, solutions, setters, getters et visualisation  
 - **CTDirect.jl** : discrétisation et résolution  
 - **CTFlows.jl** : flots de systèmes dynamiques
-- **CTParser.jl** : définition abstraite et parsing
+- **CTParser.jl** : définition abstraite (Domain-Specific-Language) et parsing
 
 </div>
 
