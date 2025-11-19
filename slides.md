@@ -402,7 +402,7 @@ julia> ∇f(1.0, 2.0)
 <div class="columns">
 <div class="column">
 
-**Formulation mathématique**
+**Formulation mathématique** $\quad\quad\quad\xrightarrow{\href{https://control-toolbox.org/OptimalControl.jl/stable/manual-ai-llm.html}{\text{Utiliser l'IA}}}$
 
 $$
 \begin{aligned}
