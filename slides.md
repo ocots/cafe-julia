@@ -270,6 +270,7 @@ style: |
     img[alt~="center"] { display: block; margin: 0 auto; }
     .caption { text-align: center; font-style: italic; font-size: 0.8em; }
 ---
+<!-- LTeX: language=fr-FR -->
 <!-- _class: title -->
 
 # L’écosystème Julia *control-toolbox* pour le contrôle optimal
@@ -278,7 +279,7 @@ style: |
 
 *Jean-Baptiste Caillau • Joseph Gergaud • Pierre Martinon • Sophia Sed*
 
-MeetUp Julia, Observatoire de Paris, 25 septembre 2025
+Café Julia, 20 novembre 2025
 
 ---
 
