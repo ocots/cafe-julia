@@ -347,7 +347,7 @@ Dans cette présentation, nous verrons :
 
 ## 3. Pourquoi Julia ?
 
-Julia est un langage de haut niveau, rapide et dynamique, particulièrement adapté au calcul scientifique et au contrôle optimal.
+Julia est un langage de haut niveau, performant, particulièrement adapté au calcul scientifique et au contrôle optimal.
 
 - **Performances** : compilation JIT et fonctions *type stable* → code machine optimisé  
 - **Syntaxe expressive** : proche des notations mathématiques, avec prise en charge d’Unicode  
