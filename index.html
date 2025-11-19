@@ -547,18 +547,16 @@ img[alt~=&quot;center&quot;] { display: block; margin: 0 auto; }
 ;" data-marpit-pagination-total="13" data-size="16:9">
 <header><div class='qr-code'></div></header>
 <h2 id="contexte">Contexte</h2>
-<p>Le projet <strong>control-toolbox</strong> rassemble plusieurs packages Julia pour modéliser et résoudre des problèmes de contrôle optimal.</p>
+<p>Le projet <strong>control-toolbox</strong> rassemble plusieurs packages Julia pour modéliser et résoudre des problèmes de contrôle optimal. Son package principal est <strong>OptimalControl.jl</strong>, dont la première version a été publiée le 4 février 2023.</p>
+<p>Dans cette présentation, nous verrons :</p>
 <ul>
-<li>Package central : <strong>OptimalControl.jl</strong></li>
-<li>Architecture modulaire et performante</li>
-<li>Calcul <strong>CPU et GPU</strong></li>
-<li>Connexion fluide entre :
-<ul>
-<li>formulation mathématique,</li>
-<li>simulation,</li>
-<li>optimisation avancée</li>
-</ul>
-</li>
+<li>Une introduction au contrôle optimal ;</li>
+<li>Un panorama de l'écosystème Julia pour le contrôle optimal ;</li>
+<li>Une présentation de l'architecture du projet ;</li>
+<li>Une démonstration pratique sur un exemple simple ;</li>
+<li>Une démonstration pratique sur une application complexe ;</li>
+<li>Une étude comparative de performances sur CPU et GPU ;</li>
+<li>Une présentation des principaux choix de conception logicielle.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-header="&lt;div class='qr-code'&gt;&lt;/div&gt;" data-theme="default" data-style="@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap');
@@ -829,14 +827,16 @@ img[alt~=&quot;center&quot;] { display: block; margin: 0 auto; }
 <header><div class='qr-code'></div></header>
 <h2 id="1-introduction">1. Introduction</h2>
 <ul>
-<li><strong>Contrôle optimal</strong> = trajectoire optimale d’un système dynamique contrôlé sous contraintes</li>
-<li>Domaine : math appliquées, optimisation, simulation numérique</li>
-<li>Applications : robotique, aéronautique, finance, énergie</li>
+<li>Un problème de <strong>contrôle optimal</strong> consiste à déterminer, pour un système dynamique contrôlé, une trajectoire <em>optimale</em> et la commande associée. La paire trajectoire-commande peut être soumise à des contraintes. Une paire est dite optimale si elle minimise un critère donné, parmi toutes celles <em>admissibles</em>.</li>
 </ul>
 <div>
-<img src="figs/spatial.png" class="centered-image" alt="" width="540px" />
+<img src="figs/spatial.png" class="centered-image" alt="" width="500px" />
 <p class="caption">Transfert Terre–Lune – Mission Apollo XI</p>
 </div>
+<ul>
+<li><strong>Domaine</strong> : optimisation dans les équations différentielles ordinaires.</li>
+<li><strong>Applications</strong> : aéronautique, aérospatial, biologie, énergie, finance, robotique, santé...</li>
+</ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-header="&lt;div class='qr-code'&gt;&lt;/div&gt;" data-theme="default" data-style="@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap');
 @import url('https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css');
@@ -1408,7 +1408,7 @@ img[alt~=&quot;center&quot;] { display: block; margin: 0 auto; }
 <h3 id="packages-principaux">Packages principaux</h3>
 <ul>
 <li><strong>OptimalControl.jl</strong> : DSL pour modéliser et résoudre des OCPs (directes/indirectes, CPU/GPU)</li>
-<li><strong>OptimalControlProblems.jl</strong> : bibliothèque de problèmes de référence, prête pour benchmarking et comparaisons</li>
+<li><strong>OptimalControlProblems.jl</strong> : bibliothèque de problèmes de référence, prête pour benchmarking et comparaisons : <a href="https://github.com/control-toolbox/CTBenchmarks.jl">CTBenchmaks.jl</a></li>
 </ul>
 <div class="columns">
 <div class="column">
