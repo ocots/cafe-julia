@@ -285,28 +285,31 @@ Café Julia, 20 novembre 2025
 
 ## Contexte
 
-Le projet **control-toolbox** rassemble plusieurs packages Julia pour modéliser et résoudre des problèmes de contrôle optimal.  
+Le projet **control-toolbox** rassemble plusieurs packages Julia pour modéliser et résoudre des problèmes de contrôle optimal. Son package principal est **OptimalControl.jl**, dont la première version a été publiée le 4 février 2023.
 
-- Package central : **OptimalControl.jl**  
-- Architecture modulaire et performante  
-- Calcul **CPU et GPU**  
-- Connexion fluide entre :  
-  - formulation mathématique,  
-  - simulation,  
-  - optimisation avancée
+Dans cette présentation, nous verrons :
+
+- Une introduction au contrôle optimal ;
+- Un panorama de l'écosystème Julia pour le contrôle optimal ;
+- Une présentation de l'architecture du projet ;
+- Une démonstration pratique sur un exemple simple ;
+- Une démonstration pratique sur une application complexe ;
+- Une étude comparative de performances sur CPU et GPU ;
+- Une présentation des principaux choix de conception logicielle.
 
 ---
 
 ## 1. Introduction
 
-- **Contrôle optimal** = trajectoire optimale d’un système dynamique contrôlé sous contraintes  
-- Domaine : math appliquées, optimisation, simulation numérique  
-- Applications : robotique, aéronautique, finance, énergie  
+- Un problème de **contrôle optimal** consiste à déterminer, pour un système dynamique contrôlé, une trajectoire *optimale* et la commande associée. La paire trajectoire-commande peut être soumise à des contraintes. Une paire est dite optimale si elle minimise un critère donné, parmi toutes celles *admissibles*.
 
 <div>
-<img src="figs/spatial.png" class="centered-image" alt="" width="540px">
+<img src="figs/spatial.png" class="centered-image" alt="" width="500px">
 <p class="caption">Transfert Terre–Lune – Mission Apollo XI</p>
 </div>
+
+- **Domaine** : optimisation dans les équations différentielles ordinaires.
+- **Applications** : aéronautique, aérospatial, biologie, énergie, finance, robotique, santé...
 
 ---
 
@@ -365,7 +368,7 @@ julia> ∇f(1.0, 2.0)
 ### Packages principaux
 
 - **OptimalControl.jl** : DSL pour modéliser et résoudre des OCPs (directes/indirectes, CPU/GPU)  
-- **OptimalControlProblems.jl** : bibliothèque de problèmes de référence, prête pour benchmarking et comparaisons  
+- **OptimalControlProblems.jl** : bibliothèque de problèmes de référence, prête pour benchmarking et comparaisons : [CTBenchmaks.jl](https://github.com/control-toolbox/CTBenchmarks.jl)
 
 <div class="columns">
 <div class="column">
