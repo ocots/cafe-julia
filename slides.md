@@ -512,8 +512,7 @@ plot(sol)
 
 ### 🔄 Qualité logicielle
 
-- **Intégration continue** : tests, couverture, documentation  
-- **Tests unitaires** : modèles, solveurs, API  
+- **Intégration continue** : tests, couverture, documentation
 - **Benchmarks** : suivi des performances (à améliorer → [Guix](https://guix.gnu.org/fr/about))
 - **Détection d'incompatibilités** en amont
 - **Workflows GitHub** centralisés : [CTActions](https://github.com/control-toolbox/CTActions)
