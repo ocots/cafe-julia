@@ -515,18 +515,19 @@ plot(sol)
 
 - **Intégration continue** : tests, couverture, documentation  
 - **Tests unitaires** : modèles, solveurs, API  
-- **Benchmarks** : suivi des performances  
-- **Détection d'incompatibilités** avec les dépendances  
+- **Benchmarks** : suivi des performances (à améliorer → [Guix](https://guix.gnu.org/fr/about)) 
+- **Détection d'incompatibilités** en amont
+- **Workflows GitHub** centralisés : [CTActions](https://github.com/control-toolbox/CTActions)
 
 <div class="columns">
 <div class="column">
 
-**Actions CI/CD**
+**CTActions workflows**
 
-<img src="figs/actions.png" alt="Actions CI/CD" style="max-width: 100%;"/>
+<img src="figs/actions.png" alt="CTActions workflows" style="max-width: 100%;"/>
 
 </div>
-<div class="column">
+<div class="column">    
 
 **Détection d'incompatibilités**
 
@@ -554,16 +555,15 @@ plot(sol)
 
 **Reproductibilité**
 
-<img src="figs/reproduce_.png" alt="Reproductibilité" style="max-width: 100%;"/>
+<img src="figs/reproductibility.png" alt="Reproductibilité" style="max-width: 100%;"/>
 
 </div>
 <div class="column">
 
-**Communauté active**
+**Communauté**
 
 - Issues et discussions GitHub
 - Contributions bienvenues
-- Environnements reproductibles
 
 </div>
 </div>
@@ -581,8 +581,9 @@ plot(sol)
 
 ### Prochaines étapes
 
-- Extension de l'écosystème : Méthodes indirectes, homotopiques, raffinement de grille...
-- Renforcement de la communauté : applications, tutoriels, algorithmes...
+- Proposer de nouveaux algorithmes : méthode homotopique, raffinement de grille...
+- Extension de la collection de problèmes modélisés et benchmarking
+- Extension du DSL control-toolbox (CTDSL) : transformations abstraites, compilateur CTDSL ⟷ MTK (ModelingToolKit)
 
 ---
 
