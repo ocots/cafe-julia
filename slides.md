@@ -4,7 +4,7 @@ theme: default
 paginate: true
 size: 16:9
 math: mathjax
-header: "<div class='qr-code'></div>"
+//header: "<div class='qr-code'></div>"
 style: |
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
     @import url('https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css');
