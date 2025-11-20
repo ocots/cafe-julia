@@ -579,7 +579,7 @@ plot(sol)
 
 ### Prochaines étapes
 
-- Proposer de nouveaux algorithmes : méthode homotopique, raffinement de grille...
+- Proposer de nouveaux algorithmes : méthode homotopique, raffinement de grille, multi-phases, hybride...
 - Extension de la collection de problèmes modélisés et benchmarking
 - Extension du DSL control-toolbox (CTDSL) : transformations abstraites, compilateur CTDSL ⟷ MTK (ModelingToolKit)
 
