@@ -585,6 +585,7 @@ plot(sol)
 
 ---
 
+
 ### Ressources
 
 - 📚 Documentation : [control-toolbox.org](https://control-toolbox.org)  
