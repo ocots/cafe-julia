@@ -275,7 +275,7 @@ style: |
 
 # L’écosystème Julia *control-toolbox* pour le contrôle optimal
 
-*Olivier Cots – Toulouse INP, IRIT*
+*Olivier Cots – Toulouse INP, IRIT, Inria*
 
 *Jean-Baptiste Caillau • Joseph Gergaud • Pierre Martinon*
 
